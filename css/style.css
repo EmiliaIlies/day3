@@ -67,23 +67,12 @@ body .form-section form .field input {
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
-  width: 100%;
+  width: calc(100% - 35px);
   border: 2px solid transparent;
 }
 body .form-section form .field input[type="checkbox"] {
   width: max-content;
   margin: 0 5px 0 0;
-}
-body .form-section form .field input {
-  margin-top: 10px;
-  color: var(--dark-grey);
-  background-color: var(--light-grey);
-  box-shadow: none;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  width: 100%;
-  border: 2px solid transparent;
 }
 body .form-section form .field input:focus {
   outline: none;
