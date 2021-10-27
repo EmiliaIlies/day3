@@ -1,0 +1,126 @@
+/* Colors */
+
+:root {
+  --dark-blue: #185a9d;
+  --turquoise: #43b3b8;
+  --dark-grey: #77797c;
+  --light-grey: #ededed;
+  --white: #ffffff;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(24, 90, 157, 1) 10%,
+    rgba(67, 179, 184, 1) 100%
+  );
+  font-family: "Roboto", sans-serif;
+}
+body .form-section {
+  margin: 0 auto;
+  width: 40%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 12px 39px 3px rgba(0, 0, 0, 0.48);
+}
+body .form-section .form-header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/mountains.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 30px;
+}
+body .form-section .form-header h1 {
+  color: var(--white);
+  font-size: 35px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+body .form-section form {
+  background: var(--white);
+  padding: 30px 50px;
+}
+body .form-section form .field {
+  display: block;
+  margin-bottom: 20px;
+}
+body .form-section form .field label {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--dark-grey);
+}
+body .form-section form .field input {
+  margin-top: 10px;
+  color: var(--dark-grey);
+  background-color: var(--light-grey);
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 100%;
+  border: 2px solid transparent;
+}
+body .form-section form .field input[type="checkbox"] {
+  width: max-content;
+  margin: 0 5px 0 0;
+}
+body .form-section form .field input {
+  margin-top: 10px;
+  color: var(--dark-grey);
+  background-color: var(--light-grey);
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  border: 2px solid transparent;
+}
+body .form-section form .field input:focus {
+  outline: none;
+  border-color: var(--dark-blue);
+}
+body .form-section form .field p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dark-grey);
+}
+body .form-section form .field p a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dark-blue);
+  transition: 0.3s;
+}
+body .form-section form .field p a:hover {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--turquoise);
+}
+body .form-section form .submit {
+  background-color: var(--dark-blue);
+  border-radius: 30px;
+  padding: 15px 50px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+body .form-section form .submit:hover {
+  background-color: var(--turquoise);
+}
+body .form-section form .submit-button {
+  margin: 0 auto;
+  width: max-content;
+}

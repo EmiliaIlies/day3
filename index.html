@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ilies Emilia - Day 3</title>
+  </head>
+  <body>
+    <section class="form-section">
+      <header class="form-header">
+        <h1>Create an account</h1>
+      </header>
+      <form>
+        <div class="field">
+          <label for="username">Username*</label><br />
+          <input
+            id="username"
+            type="text"
+            placeholder="Enter username"
+            name="username"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="email">Email*</label><br />
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter email"
+            name="email"
+            pattern=".{10,30}.+@endava\.com"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="date">BirthDate</label><br />
+          <input
+            type="date"
+            name="birthdate"
+            placeholder="dd/mm/yyyy"
+            pattern="\d{1,2}/\d{1,2}/\d{4}"
+            min="1921-01-01"
+            max="2003-12-31"
+          />
+        </div>
+        <div class="field">
+          <label for="password">password*</label><br />
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter password"
+            name="password"
+            required
+          />
+        </div>
+        <div class="field">
+          <p>
+            <input type="checkbox" name="terms" required /> I accept the
+            <a href="#">Terms and Conditions</a>
+          </p>
+        </div>
+        <div class="submit-button">
+          <button class="submit" type="submit">Sign up</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
